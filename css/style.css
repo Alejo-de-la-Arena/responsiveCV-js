@@ -277,12 +277,14 @@ span{
 }
 
 .portfolio-capa h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    top: 0;
 }
 
 .portfolio-capa p{
     font-size: 1.5rem;
     margin: .3rem 0 1rem;
+    font-weight: 700;
 }  
 
 .portfolio-capa a{
@@ -403,6 +405,10 @@ span{
 
     .footer{
         padding: 2rem 3%;
+    }
+
+    .contact{
+        min-height: auto;
     }
 }
 
