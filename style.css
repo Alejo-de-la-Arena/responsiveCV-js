@@ -320,9 +320,13 @@ span{
 }
 
 .certificate-img{
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    grid-template-columns: 3, 1fr;
+    grid-template-areas: 
+    "certificate-dh certificate-ch-wd certificate-ch-js"
+    "certificate-ch-rt certificate-ch-fd ."
+    ;
 }
 
 .certificate-img img{
@@ -332,9 +336,28 @@ span{
 }
 
 .certificate-img img:hover{
-    transform: scale(1.2); 
-    transition: transform 0.2s;
+    box-shadow: 0 0 10px #af57bc;
 }
+
+.certificate-dh{
+    grid-area: "certificate-dh";
+}
+
+.certificate-ch-wd{
+    grid-area: "certificate-ch-wd";
+}
+
+.certificate-ch-js{
+    grid-area: "certificate-ch-js";
+}
+.certificate-ch-rt{
+    grid-area: "certificate-ch-rt";
+}
+.certificate-ch-fd{
+    grid-area: "certificate-ch-fd";
+}
+
+
 
 .Contact{
     background-color: var(--second--bg-color);
